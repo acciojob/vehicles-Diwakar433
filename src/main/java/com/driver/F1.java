@@ -21,10 +21,11 @@ public class F1 extends Car {
 
 
         newSpeed = getCurrentSpeed() + rate;
-        if(newSpeed == 0) {
+        if(newSpeed <= 0) {
             //Stop the car, set gear as 1
-            changeGear(1);
             this.stop();
+            changeGear(1);
+
         }
         else if(newSpeed <= 50)
             changeGear(2);
