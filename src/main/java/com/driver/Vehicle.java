@@ -43,7 +43,8 @@ public class Vehicle {
     }
 
     public void setCurrentSpeed(int currentSpeed) {
-        this.currentSpeed += currentSpeed;
+        this.currentSpeed = currentSpeed;
+
     }
 
     public int getCurrentSpeed() {
